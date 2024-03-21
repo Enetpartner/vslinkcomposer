@@ -1,6 +1,6 @@
 <?php
 
-namespace Enetpartner\Vslinkcomposer;
+namespace Enetpartner\Vslinkcomposer\RandomPassword;
 
 class Password
 {
