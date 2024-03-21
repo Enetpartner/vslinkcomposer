@@ -21,5 +21,9 @@
             "email": "tom.buathier@enetpartner.fr"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": [
+        {"type": "composer", "url": "https://repo.packagist.com/enetpartner/"},
+        {"packagist.org": false}
+    ]
 }
