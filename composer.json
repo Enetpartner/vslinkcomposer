@@ -4,8 +4,7 @@
     "description": "Composer avec les services vslink",
     "type": "library",
     "require": {
-        "php": ">=8.1",
-        "illuminate/support": "5.6.* || 5.7.* || 5.8.* || 6.0.*"
+        "php": ">=8.1"
     },
     "license": "MIT",   
     "autoload": {
@@ -22,8 +21,5 @@
             "email": "tom.buathier@enetpartner.fr"
         }
     ],
-    "require-dev": {
-        "orchestra/testbench": "^3.8"
-    },
     "minimum-stability": "dev"
 }
