@@ -23,7 +23,13 @@
     ],
     "minimum-stability": "dev",
     "repositories": [
-        {"type": "composer", "url": "https://repo.packagist.com/enetpartner/"},
-        {"packagist.org": false}
+        {
+            "type": "composer", 
+            "name": "enetpartner/vslinkcomposer",
+            "url": "https://github.com/Enetpartner/vslinkcomposer.git"
+        },
+        {
+            "packagist.org": false
+        }
     ]
 }
