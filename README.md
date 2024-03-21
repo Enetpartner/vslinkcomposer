@@ -5,7 +5,7 @@ Package composer qui comprend les services vslink
 ## Installation 
 
 ```bash
-$ composer require enetpartner/vslinkcomposer
+$ composer require enetpartner/vslinkcomposer:dev-main
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ $ composer require enetpartner/vslinkcomposer
 
 use RandomPassword\Password;
 
-$password = new Password(10);
+$password = new Password();
 echo $password->generate();
 
 ```
