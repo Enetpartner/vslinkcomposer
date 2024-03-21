@@ -9,7 +9,7 @@
     "license": "MIT",   
     "autoload": {
         "psr-4": {
-            "Enetpartner\\Vslinkcomposer\\": "src/RandomPassword/"
+            "Enetpartner\\Vslinkcomposer\\": "src/"
         },
         "files": [
             "src/RandomPassword/Password.php"
