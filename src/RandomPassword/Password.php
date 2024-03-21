@@ -6,11 +6,6 @@ class Password
 {
     private $length = 8;
 
-    public function __construct($length)
-    {
-        $this->length = $length;
-    }
-
     public function generate()
     {
         $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789[{(*%+-$#@!)}]";
