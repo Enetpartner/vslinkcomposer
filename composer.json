@@ -5,7 +5,17 @@
     "type": "library",
     "require": {
         "php": ">=8.1",
-        "symfony/security-bundle": "5.4.*"
+        "symfony/security-bundle": "5.4.*",
+        "symfony/console": "5.4.*",
+        "symfony/dependency-injection": "5.4.*",
+        "symfony/config": "5.4.*",
+        "doctrine/annotations": "^1.14",
+        "doctrine/doctrine-bundle": "^2.7",
+        "doctrine/doctrine-fixtures-bundle": "^3.4",
+        "doctrine/doctrine-migrations-bundle": "^3.2",
+        "doctrine/orm": "^2.10",
+        "stof/doctrine-extensions-bundle": "*",
+        "symfony/process": "5.4.*"
     },
     "license": "MIT",   
     "autoload": {
@@ -15,6 +25,13 @@
         "files": [
             "src/RandomPassword/Password.php"
         ]
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "5.4.*"
+        }
+       
     },
     "authors": [
         {

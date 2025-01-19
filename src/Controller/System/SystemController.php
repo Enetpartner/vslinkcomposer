@@ -1,12 +1,12 @@
 <?php
-namespace App\Controller\System;
+namespace Enetpartner\Vslinkcomposer\Controller\System;
 
-use App\Entity\Version;
-use App\Service\AppService;
-use App\Service\System\CronTabService;
-use App\Service\System\Fail2banService;
-use App\Service\System\DirectoryService;
-use App\Service\System\SystemInfoService;
+use Enetpartner\Vslinkcomposer\Entity\Version;
+use Enetpartner\Vslinkcomposer\Service\AppService;
+use Enetpartner\Vslinkcomposer\Service\System\CronTabService;
+use Enetpartner\Vslinkcomposer\Service\System\Fail2banService;
+use Enetpartner\Vslinkcomposer\Service\System\DirectoryService;
+use Enetpartner\Vslinkcomposer\Service\System\SystemInfoService;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
