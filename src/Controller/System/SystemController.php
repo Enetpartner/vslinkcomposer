@@ -37,7 +37,7 @@ class SystemController extends AbstractController
             $files_backup = $directoryService->listDirectoryContents($folder_system.'/backup');
         }
          
-        return $this->render('Vslink/System/backup_list.html.twig', ['files' => $files_backup, 'controller_name' => 'vslink_admin_backup_list']);  
+        return $this->render('@Vslinkcomposer/Vslink/System/backup_list.html.twig', ['files' => $files_backup, 'controller_name' => 'vslink_admin_backup_list']);  
     }
 
     #[Route('vslink/admin/log/list', name: "vslink_admin_log_list")]
@@ -54,7 +54,7 @@ class SystemController extends AbstractController
             $files_log = $directoryService->listDirectoryContents($folder_system.'/var/log');
         }
          
-        return $this->render('Vslink/System/log_list.html.twig', ['files' => $files_log, 'controller_name' => 'vslink_admin_log_list']);  
+        return $this->render('@MonPackage/Vslink/System/log_list.html.twig', ['files' => $files_log, 'controller_name' => 'vslink_admin_log_list']);  
     }
 
     #[Route('vslink/admin/crontab/list', name: "vslink_admin_crontab_list")]
