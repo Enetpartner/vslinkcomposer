@@ -31,7 +31,7 @@
             "allow-contrib": false,
             "require": "5.4.*",
             "bundle": [
-                "Enetpartner\\Vslinkcomposer\\Vslinkcomposer\\VslinkcomposerBundle"
+                "Enetpartner\\Vslinkcomposer\\EnetpartnerVslinkcomposerBundle"
             ]
         }
        
