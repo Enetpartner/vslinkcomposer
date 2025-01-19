@@ -4,7 +4,8 @@
     "description": "Composer avec les services vslink",
     "type": "library",
     "require": {
-        "php": ">=8.1"
+        "php": ">=8.1",
+        "symfony/console": "5.4.*"
     },
     "license": "MIT",   
     "autoload": {
