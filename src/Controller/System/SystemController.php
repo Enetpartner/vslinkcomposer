@@ -22,7 +22,7 @@ class SystemController extends AbstractController
         $this->em = $entityManager->getManager();
     }    
 
-    #[Route('admin/backup/list', name: "admin_backup_list")]
+    #[Route('vslink/admin/backup/list', name: "vslink_admin_backup_list")]
     public function backuplist(DirectoryService $directoryService)
     {
         if (!$this->security->isGranted('ROLE_ADMINISTRATEUR')) {
@@ -37,10 +37,10 @@ class SystemController extends AbstractController
             $files_backup = $directoryService->listDirectoryContents($folder_system.'/backup');
         }
          
-        return $this->render('System/backup_list.html.twig', ['files' => $files_backup, 'controller_name' => 'admin_backup_list']);  
+        return $this->render('Vslink/System/backup_list.html.twig', ['files' => $files_backup, 'controller_name' => 'vslink_admin_backup_list']);  
     }
 
-    #[Route('admin/log/list', name: "admin_log_list")]
+    #[Route('vslink/admin/log/list', name: "vslink_admin_log_list")]
     public function loglist(DirectoryService $directoryService)
     {
         if (!$this->security->isGranted('ROLE_ADMINISTRATEUR')) {
@@ -54,10 +54,10 @@ class SystemController extends AbstractController
             $files_log = $directoryService->listDirectoryContents($folder_system.'/var/log');
         }
          
-        return $this->render('System/log_list.html.twig', ['files' => $files_log, 'controller_name' => 'admin_log_list']);  
+        return $this->render('Vslink/System/log_list.html.twig', ['files' => $files_log, 'controller_name' => 'vslink_admin_log_list']);  
     }
 
-    #[Route('admin/crontab/list', name: "admin_crontab_list")]
+    #[Route('vslink/admin/crontab/list', name: "vslink_admin_crontab_list")]
     public function crontabList(CronTabService $cronTabService)
     {
         if (!$this->security->isGranted('ROLE_ADMINISTRATEUR')) {
@@ -71,36 +71,36 @@ class SystemController extends AbstractController
             return new Response('Erreur: ' . $e->getMessage());
         }
 
-        return $this->render('System/crontab_list.html.twig', [
+        return $this->render('Vslink/System/crontab_list.html.twig', [
             'cronJobs' => $cronJobs,
-            'controller_name' => 'admin_crontab_list'
+            'controller_name' => 'vslink_admin_crontab_list'
         ]);  
     }
 
-    #[Route('admin/system/info', name: "admin_system_info")]
+    #[Route('vslink/admin/system/info', name: "vslink_admin_system_info")]
     public function systemInfo(SystemInfoService $systemInfoService, Fail2banService $fail2banService)
     {
         if (!$this->security->isGranted('ROLE_ADMINISTRATEUR')) {
             throw $this->createAccessDeniedException('Accès limité.');
         }
-        return $this->render('System/system_info.html.twig', [
+        return $this->render('Vslink/System/system_info.html.twig', [
             'os_version' => $systemInfoService->getOsVersion(),
             'disk_usage' => $systemInfoService->getDiskUsage(),
             'memory_usage' => $systemInfoService->getMemoryUsage(),
             'last_update' => $systemInfoService->getLastUpdateDate(),
             'fail2ban' => $fail2banService->getFail2banActive(),
-            'controller_name' => 'admin_system_info'
+            'controller_name' => 'vslink_admin_system_info'
         ]);
     }
 
-    #[Route('admin/version/list', name: "admin_version_list")]
+    #[Route('vslink/admin/version/list', name: "vslink_admin_version_list")]
     public function versionList()
     {
         if (!$this->security->isGranted('ROLE_ADMINISTRATEUR')) {
             throw $this->createAccessDeniedException('Accès limité.');
         }
         $versions = $this->em->getRepository(Version::class)->findAllBy();
-        return $this->render('System/version.html.twig', [ 'versions' => $versions, 'controller_name' => 'admin_version_list']);
+        return $this->render('Vslink/System/version.html.twig', [ 'versions' => $versions, 'controller_name' => 'vslink_admin_version_list']);
     }
 
 

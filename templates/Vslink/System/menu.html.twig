@@ -1,0 +1,17 @@
+<div class="d-row d-flex justify-content-center mb-2">
+        <button type="button" class="btn btn-success btn-sm " {% if controller_name == 'vslink_admin_backup_list' %} disabled {% endif %} onclick="window.location.href = '{{ path('vslink_admin_backup_list') }}';">
+          <span class="d-none d-lg-block">Backup</span><span class="d-lg-none">B</span>
+        </button>
+        <button type="button" class="btn btn-success btn-sm " {% if controller_name == 'vslink_admin_crontab_list' %} disabled {% endif %} onclick="window.location.href = '{{ path('vslink_admin_crontab_list') }}';">
+          <span class="d-none d-lg-block">Crontab</span><span class="d-lg-none">C</span>
+        </button>
+        <button type="button" class="btn btn-success btn-sm " {% if controller_name == 'vslink_admin_system_info' %} disabled {% endif %} onclick="window.location.href = '{{ path('vslink_admin_system_info') }}';">
+          <span class="d-none d-lg-block">System</span><span class="d-lg-none">S</span>
+        </button>
+        <button type="button" class="btn btn-success btn-sm " {% if controller_name == 'vslink_admin_version_list' %} disabled {% endif %} onclick="window.location.href = '{{ path('vslink_admin_version_list') }}';">
+          <span class="d-none d-lg-block">Versions</span><span class="d-lg-none">V</span>
+        </button>
+        <button type="button" class="btn btn-success btn-sm " {% if controller_name == 'vslink_admin_log_list' %} disabled {% endif %} onclick="window.location.href = '{{ path('vslink_admin_log_list') }}';">
+          <span class="d-none d-lg-block">Logs</span><span class="d-lg-none">L</span>
+        </button>
+</div>
