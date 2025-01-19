@@ -4,7 +4,7 @@ services:
         exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
 
     Enetpartner\Vslinkcomposer\Service\:
-        resource: '@VslinkcomposerBundle/Service/'
+        resource: '../src/Service'
         tags: ['controller.service_arguments']
 
     Enetpartner\Vslinkcomposer\Controller\:
