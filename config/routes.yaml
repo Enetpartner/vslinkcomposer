@@ -1,0 +1,3 @@
+VslinkcomposerBundle:
+    resource: '@VslinkcomposerBundle/Controller/'
+    type: annotation
