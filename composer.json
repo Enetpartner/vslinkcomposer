@@ -1,6 +1,6 @@
 {
     "name": "enetpartner/vslinkcomposer",
-    "version": "5.4.0",
+    "version": "5.4.1",
     "description": "Composer avec les services vslink",
     "type": "library",
     "require": {
