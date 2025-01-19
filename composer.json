@@ -22,15 +22,5 @@
             "email": "tom.buathier@enetpartner.fr"
         }
     ],
-    "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "composer", 
-            "name": "enetpartner/vslinkcomposer",
-            "url": "https://github.com/Enetpartner/vslinkcomposer.git"
-        },
-        {
-            "packagist.org": false
-        }
-    ]
+    "minimum-stability": "dev"
 }
