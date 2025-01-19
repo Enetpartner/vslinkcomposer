@@ -1,6 +1,6 @@
 services:
-    enetpartner\vslinkcomposer\:
+    Enetpartner\Vslinkcomposer\:
         resource: '../src/*'
-        exclude: '../src/{Migrations,Tests}'
+        exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
 
     # Ajoutez des services spécifiques si nécessaire
