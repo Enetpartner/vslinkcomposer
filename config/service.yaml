@@ -1,0 +1,6 @@
+services:
+    VotreVendor\MonPaquet\:
+        resource: '../src/*'
+        exclude: '../src/{Migrations,Tests}'
+
+    # Ajoutez des services spécifiques si nécessaire
