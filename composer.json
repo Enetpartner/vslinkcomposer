@@ -29,7 +29,10 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.4.*"
+            "require": "5.4.*",
+            "bundle": [
+                "Enetpartner\\Vslinkcomposer\\Vslinkcomposer\\VslinkcomposerBundle"
+            ]
         }
        
     },
