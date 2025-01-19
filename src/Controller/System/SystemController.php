@@ -37,7 +37,7 @@ class SystemController extends AbstractController
             $files_backup = $directoryService->listDirectoryContents($folder_system.'/backup');
         }
          
-        return $this->render('@Vslinkcomposer/Vslink/System/backup_list.html.twig', ['files' => $files_backup, 'controller_name' => 'vslink_admin_backup_list']);  
+        return $this->render('@VslinkcomposerBundle/Vslink/System/backup_list.html.twig', ['files' => $files_backup, 'controller_name' => 'vslink_admin_backup_list']);  
     }
 
     #[Route('vslink/admin/log/list', name: "vslink_admin_log_list")]
