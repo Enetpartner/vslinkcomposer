@@ -1,5 +1,5 @@
 services:
-    Enetpartner\Vslinkcomposer\:
+    enetpartner\vslinkcomposer\:
         resource: '../src/*'
         exclude: '../src/{Migrations,Tests}'
 
