@@ -1,5 +1,5 @@
 services:
-    VotreVendor\MonPaquet\:
+    Enetpartner\Vslinkcomposer\:
         resource: '../src/*'
         exclude: '../src/{Migrations,Tests}'
 
