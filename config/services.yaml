@@ -4,3 +4,6 @@ services:
         exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
 
     # Ajoutez des services spécifiques si nécessaire
+    Enetpartner\Vslinkcomposer\Controller\:
+        resource: '../src/Controller'
+        tags: ['controller.service_arguments'] 
